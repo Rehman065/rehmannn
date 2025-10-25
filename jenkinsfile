@@ -20,10 +20,9 @@ pipeline{
                 bat 'npm install build'
             }
         }
-        stage('deployl'){
+        stage('deploy'){
             steps{
-                bat 'npx vercel --prod --yes
-                --token=%VERCEL_TOKEN%'
+                bat 'npx vercel --prod --yes --token=%VERCEL_TOKEN%'
             }
         }
     }
