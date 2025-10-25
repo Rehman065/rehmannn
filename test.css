@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+
+}
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: transparent; /* Default transparent */
+    padding: 1rem 2rem;
+    box-shadow: none;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    border-bottom: none; /* Pehle koi border nahi hoga */
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo img{
+    height: 30px;
+    width: auto;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+.nav-menu a {
+    text-decoration: none;
+    color: #faa723;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
